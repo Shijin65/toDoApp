@@ -1,9 +1,10 @@
-
+import React,{useState} from "react";
 import  './App.css'
 
 function App() {
-
- 
+  const[toDos,setToDos]=useState([]) 
+  const[toDo,setToDo]=useState("") 
+  console.log(toDo)
   return(
     <div className="app">
       <div className="mainHeading">
@@ -14,7 +15,11 @@ function App() {
         <h2>Whoop, it's Wednesday 🌝 ☕ </h2>
       </div>
       <div className="input">
-        <input    placeholder="🖊️ Add item..." />
+        <input  id={'my-input'}
+        type={'text'}
+        value={toDo}
+        onChange={(e) => {setToDo(e.target.value)}}
+        placeholder="🖊️ Add item..." />
         <i className="fas fa-plus"></i>
       </div>
       <div className="todos">

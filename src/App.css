@@ -13,6 +13,22 @@
     left: 50%;
     transform: translate(-50%, -10%);
   }
+  .active{
+
+    margin-top: 20% ;
+    padding-bottom: 20%;
+    background-color: black;
+    text-align: center;
+  }
+  .active p{
+    background: #ffffff;
+    margin-top: 10%;
+    margin-left: 3px;
+    font-size: medium;
+    font-weight: 700;
+    font-style: normal;
+    color: grey;
+  }
   
   .app .mainHeading h1 {
     text-align: center;
@@ -47,7 +63,9 @@
     border-color: transparent;
     outline-color: transparent;
   }
-  
+  .fa-trash:hover {
+    color: red;
+}
   .app i {
     cursor: pointer;
     font-size: larger;
